@@ -623,7 +623,7 @@ public class bigobu extends Application {
 			        	}
 					}
 			        catch ( InsufficientResourcesException e){
-			        	PopupHelper.showPopup("no munnah");
+			        	PopupHelper.showPopup("insufficient funds");
 					} 
 			        catch(InvalidLaneException e){
 			        	PopupHelper.showPopup("Lane not found");
@@ -670,7 +670,8 @@ public class bigobu extends Application {
 		        	}
 				}
 		        catch ( InsufficientResourcesException e){
-		        	PopupHelper.showPopup("no munnah");
+		        	PopupHelper.showPopup("insufficient funds
+						      ");
 				} 
 		        catch(InvalidLaneException e){
 		        	PopupHelper.showPopup("Lane not found");
@@ -716,7 +717,7 @@ public class bigobu extends Application {
 		        	}
 				}
 		        catch ( InsufficientResourcesException e){
-		        	PopupHelper.showPopup("no munnah");
+		        	PopupHelper.showPopup("insufficient fund");
 				} 
 		        catch(InvalidLaneException e){
 		        	PopupHelper.showPopup("Lane not found");
@@ -767,7 +768,7 @@ public class bigobu extends Application {
 		        	}
 				}
 		        catch ( InsufficientResourcesException e){
-		        	PopupHelper.showPopup("no munnah");
+		        	PopupHelper.showPopup("insufficient fund");
 				} 
 		        catch(InvalidLaneException e){
 		        	PopupHelper.showPopup("Lane not found");
@@ -945,7 +946,7 @@ public class bigobu extends Application {
 			 tu.setText("turn= "+ battle.getNumberOfTurns());
 			 al.setText("Available-Lanes= "+battle.getLanes().size());
 			 if(battle.getLanes().size()==0){
-				 PopupHelperend.showPopup( "Game Over YOU LOSE LOSER F's IN THE CHAT "+"\nSO BAD YOUR SCORE WAS "+battle.getScore());
+				 PopupHelperend.showPopup( "Game over chief "+"\n your score is: "+battle.getScore());
 				 
 			 }else {
 			ATTL(battle.GetTitans(0),lane1,wall1);
@@ -989,7 +990,7 @@ public class bigobu extends Application {
 		        System.out.println(battle.getResourcesGathered());
 		        updateallhrd();
 		    } catch (InsufficientResourcesException e) {
-		        PopupHelper.showPopup("No munnah");
+		        PopupHelper.showPopup("insufficient fund");
 		    } catch (InvalidLaneException e) {
 		        PopupHelper.showPopup("Lane not found");
 		    }
@@ -1029,7 +1030,7 @@ public class bigobu extends Application {
 		            updateallhrd();
 		        }
 		    } catch (InsufficientResourcesException e) {
-		        PopupHelper.showPopup("No munnah");
+		        PopupHelper.showPopup("insufficient fund");
 		    } catch (InvalidLaneException e) {
 		        PopupHelper.showPopup("Lane not found");
 		    }
